@@ -4,10 +4,12 @@ import gutoImage from '../../images/guto.png';
 import davidImage from '../../images/david.png';
 import beatrizImage from '../../images/beatriz.png';
 
+import './team.css';
+
 export default function Team() {
     return (
-        <div>
-            <article>
+        <div className='team'>
+            <article className='testimonial'>
                 <video poster={videoPlaceholder} controls></video>
                 <div>
                     <h1>PALAVRA DO CEO</h1>
@@ -18,7 +20,7 @@ export default function Team() {
                     </p>
                 </div>
             </article>
-            <article>
+            <article className='know-our-team'>
                 <h1>CONHEÇA NOSSO TIME FORA DE SÉRIE</h1>
                 <div>
                     <img src={camilaImage} alt="Camila" />

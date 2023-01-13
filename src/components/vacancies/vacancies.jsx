@@ -1,10 +1,13 @@
 import useActiveVacancies from "../../hooks/useActiveVacancies";
 
+import './vacancies.css'
+
 export default function Vacancies() {
     const {vacancies, loading, error} = useActiveVacancies();
 
     return (
-        <div>
+        <div id="vacancies" className="vacancies">
+            <header></header>
             <h1>Vagas em aberto</h1>
             {loading ? <h2>Carregando...</h2>: null}
             {error ? <h2>Erro ao carregar as vagas!</h2> : null}

@@ -1,0 +1,13 @@
+.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 3vw;
+    width: 94vw;
+}
+
+.benefits-cards {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}

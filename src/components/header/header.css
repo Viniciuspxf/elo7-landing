@@ -1,0 +1,29 @@
+.landing-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 3vw;
+}
+
+.landing-header header {
+    background-image: url('../../images/foto-header.png');
+    width: 100vw;
+    height: 50vw;
+    background-size: 100vw 50vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.landing-header header h1 {
+    position: relative;
+    bottom: 11vw;
+    font-size: 5vw;
+    color: white;
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.landing-header p {
+    text-align: center;
+}

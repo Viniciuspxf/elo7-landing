@@ -1,0 +1,17 @@
+.link  {
+    padding-top: 1vw;
+    width: 15rem;
+    border-top: 2px solid rgb(197, 197, 197);
+    text-align: center;
+}
+
+.link a {
+    text-decoration-color: transparent;
+    color: #39a0a7;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.link a:hover {
+    text-decoration-color:#39a0a7;
+}

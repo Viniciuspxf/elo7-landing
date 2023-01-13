@@ -1,0 +1,67 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    align-items: center;
+    width: 94vw;
+    padding: 4vw 3vw;
+    margin: 3vw 0;
+}
+
+.team article {
+    width: 94vw; 
+}
+
+.testimonial {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2vw;
+}
+
+.testimonial video {
+    height: 25vw;
+
+}
+
+.testimonial div {
+    margin: 0;
+    margin-left: 4vw;
+}
+
+.testimonial h1 {
+    margin: 0;
+}
+
+.testimonial h2 {
+    margin: 0.1vw 0;
+    color: orange;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.testimonial p {
+    margin: 2vw 0;
+}
+
+.know-our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.know-our-team h1 {
+    max-width: 30vw;
+    text-align: center;
+}
+
+.know-our-team div {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    margin: 2vw auto;
+}
+
+.know-our-team img {
+    width: 19vw;
+    min-width: 150px;
+}

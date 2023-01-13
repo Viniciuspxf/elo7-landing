@@ -1,0 +1,52 @@
+.vacancies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 94vw;
+    margin: 3vw;
+}
+
+.vacancies header {
+    background-image: url('./../../images/foto-bottom.png');
+    width: inherit;
+    height: 30vw;
+    background-size: cover;
+    align-self: center;
+}
+
+.vacancies h1 {
+    align-self: center;
+    margin: 2vw auto;
+}
+
+.vacancies h2 {
+    margin: 2vw 0;
+}
+
+.vacancies table {
+    display: flex;
+    
+}
+
+.vacancies tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+    width: 94vw;
+}
+
+.vacancies td {
+    color: #817e7ab4;
+    font-weight: bold;
+}
+
+
+.vacancies td a {
+    text-decoration-color: transparent;
+    color: #39a0a7;
+    transition: all 0.4s;
+}
+
+.vacancies td a:hover {
+    text-decoration-color:#39a0a7;
+}
