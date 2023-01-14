@@ -8,3 +8,11 @@
 .benefit-card h1 {
     text-align: center;
 }
+
+@media screen and (max-width: 550px) {
+    .benefit-card {
+        width: inherit;
+        margin: 2vw auto;
+        text-align: center;
+    }
+}

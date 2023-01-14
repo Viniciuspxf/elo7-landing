@@ -11,3 +11,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 550px) {
+    .benefits-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

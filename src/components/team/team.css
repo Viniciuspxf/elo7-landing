@@ -65,3 +65,33 @@
     width: 19vw;
     min-width: 150px;
 }
+
+@media screen and (max-width: 700px) {
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial video {
+        height: 48vw;
+    }
+
+    .testimonial div {
+        margin-top: 4vw;
+        text-align: center;
+    }
+
+    .know-our-team div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .know-our-team h1 {
+        max-width: none;
+    }
+
+    .know-our-team img {
+        width: 40vw;
+        margin-top: 3vw;
+    }
+}
