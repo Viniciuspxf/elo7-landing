@@ -3,13 +3,13 @@
     flex-direction: column;
     background-color: #F8F8F8;
     align-items: center;
-    width: 94vw;
-    padding: 4vw 3vw;
+    width: 90vw;
+    padding: 4vw 5vw;
     margin: 3vw 0;
 }
 
 .team article {
-    width: 94vw; 
+    width: inherit; 
 }
 
 .testimonial {
