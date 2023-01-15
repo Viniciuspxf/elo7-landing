@@ -8,7 +8,7 @@ import './team.css';
 
 export default function Team() {
     return (
-        <div className='team'>
+        <section className='team'>
             <article className='testimonial'>
                 <video poster={videoPlaceholder} controls></video>
                 <div>
@@ -29,6 +29,6 @@ export default function Team() {
                     <img src={beatrizImage} alt="Beatriz" />
                 </div>
             </article>
-        </div>
+        </section>
     );
 }

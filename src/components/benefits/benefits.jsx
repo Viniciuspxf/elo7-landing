@@ -23,13 +23,13 @@ export default function Benefits() {
 
 
     return (
-        <div className="benefits">
+        <section className="benefits">
             <div className="benefits-cards">
                 <BenefitCard benefitImage={qualityImage} benefitHeading="QUALIDADE DE VIDA" benefitText={qualityText}/>
                 <BenefitCard benefitImage={activitiesImage} benefitHeading="AMBIENTE DESCONTRAÍDO" benefitText={activitiesText}/>
                 <BenefitCard benefitImage={relaxationImage} benefitHeading="ATIVIDADES EXTRAS" benefitText={relaxationText}/>
             </div>
             <Link url="https://www.techtudo.com.br/tudo-sobre/elo7/">SAIBA MAIS</Link>
-        </div>
+        </section>
     );
 }

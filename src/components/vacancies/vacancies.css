@@ -6,12 +6,8 @@
     margin: 5vw;
 }
 
-.vacancies header {
-    background-image: url('./../../images/foto-bottom.png');
+.vacancies img {
     width: inherit;
-    height: 30vw;
-    background-size: cover;
-    align-self: center;
 }
 
 .vacancies h1 {
