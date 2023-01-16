@@ -14,7 +14,7 @@ export default function Header() {
                 nulla sed tempor. Aliquam fringilla nibh eros, sit amet elementum purus venenatis in.
             </p>
             <nav>
-                <Link url="#vacancies">VAGAS EM ABERTO</Link>
+                <Link url="#vacancies">vagas em aberto</Link>
             </nav>
         </header>
     );

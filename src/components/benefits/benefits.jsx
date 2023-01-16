@@ -25,11 +25,11 @@ export default function Benefits() {
     return (
         <section className="benefits">
             <div className="benefits-cards">
-                <BenefitCard benefitImage={qualityImage} benefitHeading="QUALIDADE DE VIDA" benefitText={qualityText}/>
-                <BenefitCard benefitImage={activitiesImage} benefitHeading="AMBIENTE DESCONTRAÍDO" benefitText={activitiesText}/>
-                <BenefitCard benefitImage={relaxationImage} benefitHeading="ATIVIDADES EXTRAS" benefitText={relaxationText}/>
+                <BenefitCard image={qualityImage} heading="qualidade de vida" text={qualityText}/>
+                <BenefitCard image={activitiesImage} heading="ambiente descontraído" text={activitiesText}/>
+                <BenefitCard image={relaxationImage} heading="atividades extras" text={relaxationText}/>
             </div>
-            <Link url="https://www.techtudo.com.br/tudo-sobre/elo7/">SAIBA MAIS</Link>
+            <Link url="https://www.techtudo.com.br/tudo-sobre/elo7/">saiba mais</Link>
         </section>
     );
 }

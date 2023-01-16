@@ -1,11 +1,11 @@
 import './benefit-card.css'
 
-export default function BenefitCard( {benefitImage, benefitHeading, benefitText} ) {
+export default function BenefitCard( {image, heading, text} ) {
     return (
         <article className="benefit-card">
-            <img src={benefitImage} alt={"ÍCONE " + benefitHeading} />
-            <h1>{benefitHeading}</h1>
-            <p>{benefitText}</p>
+            <img src={image} alt={"Ícone " + heading} />
+            <h1>{heading}</h1>
+            <p>{text}</p>
         </article>
     );
 }

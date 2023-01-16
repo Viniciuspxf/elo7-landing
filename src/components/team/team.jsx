@@ -12,8 +12,8 @@ export default function Team() {
             <article className='testimonial'>
                 <video poster={videoPlaceholder} controls></video>
                 <div>
-                    <h1>PALAVRA DO CEO</h1>
-                    <h2>Carlos Curioni</h2>
+                    <h1>Palavra do CEO</h1>
+                    <h2><em>Carlos Curioni</em></h2> 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit placerat odio,
                         quis pretium nulla venenatis sit amet. Sed scelerisque odio in nisl aliquam consequat. Mauris cursus sed
                         nulla sed tempor. Aliquam fringilla nibh eros, sit amet elementum purus venenatis in.
@@ -21,7 +21,7 @@ export default function Team() {
                 </div>
             </article>
             <article className='know-our-team'>
-                <h1>CONHEÇA NOSSO TIME FORA DE SÉRIE</h1>
+                <h1>Conheça nosso time fora de série</h1>
                 <div>
                     <img src={camilaImage} alt="Camila" />
                     <img src={gutoImage} alt="Guto" />
