@@ -13,16 +13,14 @@ export default function Vacancies() {
             {error ? <h2>Erro ao carregar as vagas!</h2> : null}
             {vacancies.length > 0 && <>
                 <h2>Desenvolvimento</h2>
-                <table> 
-                    <tbody>{
-                        vacancies.map((vacancy, index) => 
-                            <tr key={index}>
-                                <td><a href={vacancy.link}>{vacancy.cargo}</a></td>
-                                <td>{vacancy.location}</td>
-                            </tr>
-                        )
-                    }</tbody>
-                </table>
+                <ul>{
+                    vacancies.map((vacancy, index) => 
+                        <li key={index}>
+                            <span><a href={vacancy.link}>{vacancy.cargo}</a></span>
+                            <span>{vacancy.location}</span>
+                        </li>
+                    )
+                }</ul>
             </>
             }
         </section>

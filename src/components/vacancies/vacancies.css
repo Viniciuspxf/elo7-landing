@@ -19,30 +19,36 @@
     margin: 2vw 0;
 }
 
-.vacancies table {
-    display: flex;
-    
+.vacancies ul {
+    padding: 0;
 }
 
-.vacancies tr {
+.vacancies li {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
     width: 90vw;
 }
 
-.vacancies td {
+.vacancies span {
     color: #817e7ab4;
     font-weight: bold;
 }
 
 
-.vacancies td a {
+.vacancies span a {
     text-decoration-color: transparent;
     color: #39a0a7;
     transition: all 0.4s;
 }
 
-.vacancies td a:hover {
+.vacancies span a:hover {
     text-decoration-color:#39a0a7;
+}
+
+@media screen and (max-width: 640px) {
+    .vacancies li {
+        flex-direction: column;
+        margin-bottom: 4vw;
+    }
 }
