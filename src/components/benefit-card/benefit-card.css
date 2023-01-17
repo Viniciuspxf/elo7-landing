@@ -1,18 +1,22 @@
 .benefit-card {
     display: flex;
-    width: 30vw;
+    width: 28vw;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
 }
 
 .benefit-card h1 {
     text-align: center;
 }
 
-@media screen and (max-width: 550px) {
+.benefit-card p {
+    color: #a19d9c;
+}
+
+@media screen and (max-width: 640px) {
     .benefit-card {
         width: inherit;
         margin: 2vw auto;
-        text-align: center;
     }
 }
