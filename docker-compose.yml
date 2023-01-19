@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: elo7-frontend-container
+    image: elo7-frontend-image
+    build:
+      context: .
+    ports:
+      - 8080:80
