@@ -8,32 +8,21 @@ jest.mock('../../hooks/useActiveVacancies');
 
 const vacanciesData = [
   {
-    "cargo": "Desenvolvedor Mobile Senior (Android e iOS)",
-    "ativa": true,
-    "link": "http://elo7.dev/vaga/desenvolvedor-mobile-senior",
-    "localizacao": {
-      "bairro": "Vila Olímpia",
-      "cidade": "São Paulo",
-      "pais": "Brasil"
+    cargo: "Desenvolvedor Mobile Senior (Android e iOS)",
+    ativa: true,
+    link: "http://elo7.dev/vaga/desenvolvedor-mobile-senior",
+    localizacao: {
+      bairro: "Vila Olímpia",
+      cidade: "São Paulo",
+      pais: "Brasil"
     },
-    "location": "Vila Olímpia - São Paulo, Brasil"
+    location: "Vila Olímpia - São Paulo, Brasil"
   },
   {
-    "cargo": "Desenvolvedor Java Senior",
-    "ativa": true,
-    "link": "http://elo7.dev/vaga/desenvolvedor-java-senior",
-    "localizacao": {
-      "bairro": "Vila Olímpia",
-      "cidade": "São Paulo",
-      "pais": "Brasil"
-    },
-    "location": "Vila Olímpia - São Paulo, Brasil"
-  },
-  {
-    "cargo": "Desenvolvedor Java Junior",
-    "ativa": true,
-    "link": "http://elo7.dev/vaga/desenvolvedor-java-jr",
-    "location": "Remoto"
+    cargo: "Desenvolvedor Java Junior",
+    ativa: true,
+    link: "http://elo7.dev/vaga/desenvolvedor-java-jr",
+    location: "Remoto"
   }
 ];
 
@@ -47,13 +36,12 @@ describe('useActiveVacancies', () => {
       render(<Vacancies />);
 
       const listItems = screen.getAllByRole("listitem");
-      const vacancyName = screen.getAllByText("Desenvolvedor Java Senior");
-      const vacancyLocation = screen.getAllByText("Vila Olímpia - São Paulo, Brasil");
+      const vacancyName = screen.getAllByText("Desenvolvedor Java Junior");
+      const vacancyLocation = screen.getAllByText("Remoto");
 
-      expect(listItems).toHaveLength(3);
+      expect(listItems).toHaveLength(2);
       expect(vacancyName[0]).toBeVisible();
       expect(vacancyLocation[0]).toBeVisible();
-  
     });
 
 
@@ -65,7 +53,7 @@ describe('useActiveVacancies', () => {
 
       const loadingElement = screen.getByText("Carregando...");
       
-      expect(()=>screen.getByRole("listitem")).toThrowError();
+      expect(()=>screen.getAllByRole("listitem")).toThrowError();
       expect(loadingElement).toBeVisible();
     });
 
@@ -78,9 +66,7 @@ describe('useActiveVacancies', () => {
 
       const errorElement = screen.getByText("Erro ao carregar as vagas!");
       
-      expect(()=>screen.getByRole("listitem")).toThrowError();
+      expect(()=>screen.getAllByRole("listitem")).toThrowError();
       expect(errorElement).toBeVisible();
     });
-
-
   });
