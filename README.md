@@ -6,7 +6,7 @@ Tela principal contendo um resumo sobre o Elo7, como é trabalhar aqui, alguns d
 
 ## Framework utilizado:
 
-React
+HTML, CSS, JavaScript, React, Jest.
   
 ## Deploy:
 
