@@ -1,0 +1,50 @@
+.testimonial {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2vw;
+    width: inherit;
+}
+
+.testimonial video {
+    height: 25vw;
+}
+
+.testimonial div {
+    margin: 0;
+    margin-left: 4vw;
+}
+
+.testimonial h1 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.testimonial h2 {
+    margin: 0.1vw 0;
+    color: orange;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.testimonial p {
+    margin: 3vw 0;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 640px) {
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial video {
+        height: auto;
+        width: inherit;
+    }
+
+    .testimonial div {
+        margin-top: 4vw;
+        text-align: center;
+    }
+}

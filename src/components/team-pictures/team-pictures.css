@@ -1,0 +1,38 @@
+.team-pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+}
+
+.team-pictures h1 {
+    max-width: 35vw;
+    text-align: center;
+}
+
+.team-pictures div {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    margin: 2vw auto;
+}
+
+.team-pictures img {
+    width: 21.5vw;
+}
+
+@media screen and (max-width: 640px) {
+    .team-pictures div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-pictures h1 {
+        max-width: none;
+    }
+
+    .team-pictures img {
+        width: 45vw;
+        margin-top: 3vw;
+    }
+}
