@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import useFetch from "./useFetch";
 
 export default function useActiveVacancies() {
-    const {data, loading, error} = useFetch('http://www.mocky.io/v2/5d6fb6b1310000f89166087b');
+    const {data, loading, error} = useFetch('https://www.mocky.io/v2/5d6fb6b1310000f89166087b');
     let vacancies = [];
 
     if (data) {
