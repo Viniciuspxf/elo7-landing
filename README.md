@@ -4,7 +4,7 @@
 
 Tela principal contendo um resumo sobre o Elo7, como é trabalhar aqui, alguns depoimentos e nossa cultura, além de conter uma listagem das vagas em aberto.
 
-## Framework utilizado:
+## Tecnologias utilizadas:
 
 HTML, CSS, JavaScript, React, Jest.
   
