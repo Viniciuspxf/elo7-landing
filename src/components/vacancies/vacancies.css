@@ -10,12 +10,12 @@
     width: inherit;
 }
 
-.vacancies h1 {
+.vacancies h2 {
     align-self: center;
     margin: 2vw auto;
 }
 
-.vacancies h2 {
+.vacancies h3 {
     margin: 2vw 0;
 }
 

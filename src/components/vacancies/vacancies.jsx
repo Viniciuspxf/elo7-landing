@@ -8,11 +8,11 @@ export default function Vacancies() {
     return (
         <section id="vacancies" className="vacancies">
             <img src={bottomImage} alt="Evento da elo7." />
-            <h1>Vagas em aberto</h1>
-            {loading ? <h2>Carregando...</h2>: null}
-            {error ? <h2>Erro ao carregar as vagas!</h2> : null}
+            <h2>Vagas em aberto</h2>
+            {loading ? <h3>Carregando...</h3>: null}
+            {error ? <h3>Erro ao carregar as vagas!</h3> : null}
             {vacancies.length > 0 && <>
-                <h2>Desenvolvimento</h2>
+                <h3>Desenvolvimento</h3>
                 <ul>{
                     vacancies.map((vacancy, index) => 
                         <li key={index}>

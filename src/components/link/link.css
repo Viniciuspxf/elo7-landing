@@ -3,9 +3,6 @@
     width: 12rem;
     border-top: 2px solid rgb(197, 197, 197);
     text-align: center;
-}
-
-.link a {
     text-decoration-color: transparent;
     text-transform: uppercase;
     color: #39a0a7;
@@ -13,6 +10,10 @@
     transition: all 0.4s;
 }
 
-.link a:hover {
+.link a {
+    
+}
+
+.link:hover {
     text-decoration-color:#39a0a7;
 }

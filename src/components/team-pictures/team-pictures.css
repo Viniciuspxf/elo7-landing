@@ -5,7 +5,7 @@
     width: inherit;
 }
 
-.team-pictures h1 {
+.team-pictures h2 {
     max-width: 35vw;
     text-align: center;
 }
@@ -27,7 +27,7 @@
         align-items: center;
     }
 
-    .team-pictures h1 {
+    .team-pictures h2 {
         max-width: none;
     }
 

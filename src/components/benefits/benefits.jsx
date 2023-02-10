@@ -21,13 +21,33 @@ export default function Benefits() {
     "nulla sed tempor. Aliquam fringilla nibh eros, sit amet elementum purus venenatis in. Curabitur consequat " +
     "massa vitae faucibus ullamcorper. Curabitur ante magna, dictum quis aliquam eu, varius vitae sapien.";
 
+    const benefitsInfo = [
+        {
+            text: qualityText,
+            heading: "qualidade de vida",
+            image: qualityImage
+        },
+        {
+            text: relaxationText,
+            heading: "ambiente descontraído",
+            image: relaxationImage
+        },
+        {
+            text: activitiesText,
+            heading: "atividades extras",
+            image: activitiesImage
+        }
+    ];
+
 
     return (
         <section className="benefits">
             <div className="benefits-cards">
-                <BenefitCard image={qualityImage} heading="qualidade de vida" text={qualityText}/>
-                <BenefitCard image={activitiesImage} heading="ambiente descontraído" text={activitiesText}/>
-                <BenefitCard image={relaxationImage} heading="atividades extras" text={relaxationText}/>
+                {
+                    benefitsInfo.map( (benefitInfo, index) =>
+                        <BenefitCard key={index} {...benefitInfo}/>
+                    )
+                }
             </div>
             <Link url="https://www.techtudo.com.br/tudo-sobre/elo7/">saiba mais</Link>
         </section>
